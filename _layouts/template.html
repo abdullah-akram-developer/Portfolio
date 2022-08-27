@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Abdullah Akram - Front-End Web Developer</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.addEventListener('load', (event) => {
+            const toggleButton = document.getElementsByClassName('toggle-button')[0];
+            const navbarlinks = document.getElementsByClassName('nav-bar-items')[0];
+            toggleButton.addEventListener('click', () => {
+                navbarlinks.classList.toggle('active')
+            });
+            var setting1 = {
+                delay: 400,
+                duration: 500,
+                // reset: true
+            };
+            ScrollReveal().reveal('.row',setting1);
+            ScrollReveal().reveal(' .profile-img',setting1);
+            ScrollReveal().reveal(' .profile-section',setting1);
+            ScrollReveal().reveal(' .advantages-section',setting1);
+            ScrollReveal().reveal(' .scrollbar-process-item',setting1);
+            ScrollReveal().reveal(' .accordion-item',setting1);
+            ScrollReveal().reveal(' .hr',setting1);
+            ScrollReveal().reveal(' .footer',setting1);
+            ScrollReveal().reveal(' .circle',setting1);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container ban-1">
+        <div class="row nav-bar">
+            <div class="col-md-2">
+                <div class="brand d-flex align-items-center">
+                    <div class="logo">
+                        <img src="assets/img/logo1.png" class="img-fluid h-100">
+                    </div>
+                    <span class="logo-txt">
+                        <p>Abdullah</p>
+                        <p>Akram</p>
+                    </span>
+                </div>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="col-md-8 d-flex align-items-center justify-content-center">
+                <div class="nav-bar-items">
+                    <ul class="d-flex">
+                        <li class="list-unstyled nav-bar-item">
+                            <a href="#unique" class="text-decoration-none">Unique</a>
+                        </li>
+                        <li class="list-unstyled nav-bar-item">
+                            <a href="#projects" class="text-decoration-none">Projects</a>
+                        </li>
+                        <li class="list-unstyled nav-bar-item">
+                            <a href="#process" class="text-decoration-none">Process</a>
+                        </li>
+                        <li class="list-unstyled nav-bar-item">
+                            <a href="#reveiew" class="text-decoration-none">Reviews</a>
+                        </li>
+                        <li class="list-unstyled nav-bar-item">
+                            <a href="#faq" class="text-decoration-none">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-center justify-content-end">
+                <div class="nav-last-btn d-flex">
+                    <a href="mailto:m.abdullahakram01@gmail.com" class="text-decoration-none">Project Request<i
+                            class="bi bi-arrow-bar-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-img text-center mt-5">
+            <img src="assets/img/pp1copy.jpg" class="img-fluid h-100">
+        </div>
+        
+        <section class="text-center mt-3 profile-section">
+            <h3>Abdullah Akram</h3>
+            <h1 class="pt-1 pb-4">The Front-End Developer Expert.</h1>
+            <a href="mailto:m.abdullahakram01@gmail.com" class="text-decoration-none">Send me a project
+                request <i class="bi bi-arrow-bar-right"></i></a>
+        </section>
+    </div>
+    <div class="row company-row mt-5" style="margin-right: 0px !important;
+            margin-left: 0px !important;">
+        <ul class="company-items d-flex align-items-center
+                justify-content-center">
+            <li class="list-unstyled company-item d-flex
+                    align-items-center">
+                <div class="company-item-img">
+                    <img src="assets/img/curl.png" class="img-fluid h-100">
+                </div>
+                Planday
+            </li>
+            <li class="list-unstyled company-item">Umbraco</li>
+            <li class="list-unstyled company-item">Pearlfisher.</li>
+            <li class="list-unstyled company-item">BrightPearl</li>
+            <li class="list-unstyled company-item d-flex
+                    align-items-center">
+                <div class="company-item-img">
+                    <img src="assets/img/curl.png" class="img-fluid h-100">
+                </div>
+                Plandady
+            </li>
+        </ul>
+    </div>
+    <div class="circle"></div>
+    <div class="container">
+        <section class="advantages-section text-center">
+            <h3>Unique</h3>
+            <h2 class="pt-3">Your perfect frond-end developer partner.</h2>
+        </section>
+        <div class="row boxes" id="unique">
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 top-3-benefits-box mt-5 bg-body
+                        rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/client.png" class="img-fluid
+                                h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>50<sub>+</sub></h3>
+                        <p>It's always my first priority to make my clients
+                            fully satisfied from my work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 top-3-benefits-box mt-5 bg-body
+                        rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/best-employee.png" class="img-fluid h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>6 <sub>Years</sub></h3>
+                        <p>I have years of Experience in front-end developer
+                            i also work with clients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 top-3-benefits-box-1 mt-5 bg-body
+                        rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/project-management.png" class="img-fluid h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>20<sub>+</sub></h3>
+                        <p>I done so many projects in these years that
+                            everyone is satisfied from my work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row boxes" id="unique">
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 bg-body rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/passionate.png" class="img-fluid h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>100<sub>%</sub></h3>
+                        <p>My passion as a front-end developer is endless
+                            extremly on high level.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 bg-body rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/best-employee.png" class="img-fluid h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>100<sub>%</sub></h3>
+                        <p>My passion as a front-end developer is endless
+                            extremly on high level.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <div class="box-content shadow-lg mb-4 bg-body rounded">
+                    <div class="box-content-img">
+                        <img src="assets/img/best-employee.png" class="img-fluid h-100">
+                    </div>
+                    <div class="box-content-txt">
+                        <h3>100<sub>%</sub></h3>
+                        <p>My passion as a front-end developer is endless
+                            extremly on high level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row animation-row d-flex align-items-center">
+            <div class="col-md-6 animation-box">
+                <h3 class="text-white">Stunning Animation</h3>
+                <p class="text-white">Whether it's subtle interactions that
+                    improve the UX, or complex "WOW" animations.
+                    I can build them all.</p>
+            </div>
+            <div class="col-md-6 animation-box">
+                <div>
+                    <img src="assets/img/men.png" class="img-fluid h-100">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 universal-col-1 mt-4">
+                <div class="universal-box-1 text-center shadow-lg mb-4
+                        bg-body rounded h-100">
+                    <h3 class="pb-5 pt-5">Lightning-fast load times.</h3>
+                    <div class="benefits-img pt-5">
+                        <img src="assets/img/loading.png" class="img-fluid
+                                h-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 universal-col-2 mt-4">
+                <div class="universal-box-2 text-center shadow-lg mb-4
+                        bg-body rounded h-100">
+                    <h3 class="pt-5">Custom
+                        Integrations.</h3>
+                    <div class="benefits-img-1">
+                        <img src="assets/img/custom.png" class="img-fluid
+                                h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 responsive-row">
+            <div class="responsive-box text-center shadow-lg bg-body rounded
+                    h-100">
+                <h3 class="pt-5">Responsive Design</h3>
+                <div class="responsive-img">
+                    <img src="assets/img/respons.png" class="img-fluid
+                            h-100">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 universal-col-1 mt-4">
+                <div class="universal-box-1 text-center shadow-lg mb-4
+                        bg-body rounded h-100">
+                    <h3 class="pb-5 pt-5">Clean code</h3>
+                    <div class="full-code">
+                        <div>
+                            <span class="code-color">&lt;ul&gt;</span>
+                        </div>
+                        <div class="code-txt">
+                            <span class="code-color">&lt;li&gt;</span>
+                            Semantic HTML.
+                            <span class="code-color">&lt;/li&gt;</span>
+                        </div>
+                        <div class="code-txt">
+                            <span class="code-color">&lt;li&gt;</span>
+                            Class naming system.
+                            <span class="code-color">&lt;/li&gt;</span>
+                        </div>
+                        <div class="code-txt">
+                            <span class="code-color">&lt;li&gt;</span>
+                            Optimized for performance.
+                            <span class="code-color">&lt;/li&gt;</span>
+                        </div>
+                        <div>
+                            <span class="code-color">&lt;/ul&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 universal-col-2 mt-4">
+                <div class="universal-box-2 text-center shadow-lg mb-4
+                        bg-body rounded h-100">
+                    <h3 class="pt-5 pb-5">Duration</h3>
+                    <span>
+                        <h1><del>Months</del></h1>
+                        <h1>Weeks</h1>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center project-row-heading" id="projects">
+            <h3>Projects</h3>
+            <h2>Some of my Projects.</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <a href="#" target="_blank" class="project-content" style="pointer-events: none;">
+                    <img src="assets/img/Untitled21.png" class="img-fluid h-100">
+                </a>
+            </div>
+            <div class="col-md-6 mt-5">
+                <a href="#" class="project-content" style="pointer-events: none;">
+                    <img src="assets/img/Untitled1.png" class="img-fluid h-100">
+                </a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="#" target="_blank" style="pointer-events: none;" class="project-content">
+                    <img src="assets/img/Untitled3.png" class="img-fluid h-100">
+                </a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="#" class="project-content" style="pointer-events: none;">
+                    <img src="assets/img/Untitled.png" class="img-fluid h-100">
+                </a>
+            </div>
+        </div>
+        <div class="row text-center project-row-heading" id="process">
+            <h3>Process</h3>
+            <h2>How we work together.</h2>
+        </div>
+        <div class="scrollbar-process-items">
+            <div class="scrollbar-process-item text-center mb-4 mt-5 shadow-lg
+                bg-body rounded h-100">
+                <h4 class="pt-5 pb-2">Step 1</h4>
+                <h3 class="pb-2">Project Request</h3>
+                <p class="pb-5">At the beginning of our collaboration is the project request. Your information helps me
+                    to understand if I am the right person for your project. If yes, we will arrange a video call so I
+                    can learn more.</p>
+            </div>
+            <div class="scrollbar-process-item text-center mb-4 shadow-lg
+                bg-body rounded h-100">
+                <h4 class="pt-5 pb-2">Step 2</h4>
+                <h3 class="pb-2">First Meeting</h3>
+                <p class="pb-5">Trust is extremely important to me when working together. In our initial meeting, we get
+                    to know each other and see if we are a good fit. We also talk about the exact goals & requirements,
+                    clarify questions and define the next steps.</p>
+            </div>
+            <div class="scrollbar-process-item text-center mb-4 shadow-lg
+                bg-body rounded h-100">
+                <h4 class="pt-5 pb-2">Step 3</h4>
+                <h3 class="pb-2">Proposal</h3>
+                <p class="pb-5">After I have learned as much as possible about your project, I create an individual
+                    proposal. I don't charge for my work by the hour, but on a per project basis. This way you have a
+                    full overview of the costs.</p>
+            </div>
+            <div class="scrollbar-process-item text-center mb-4 shadow-lg
+                bg-body rounded h-100">
+                <h4 class="pt-5 pb-2">Step 4</h4>
+                <h3 class="pb-2">Implementation</h3>
+                <p class="pb-5">As soon as I have the required materials, I start with implementation. I place
+                    particular emphasis on transparency, convenient communication channels (like Slack) and regular
+                    updates.</p>
+            </div>
+            <div class="scrollbar-process-item text-center shadow-lg
+                bg-body rounded h-100">
+                <h4 class="pt-5 pb-2">Step 5</h4>
+                <h3 class="pb-2">Handover</h3>
+                <p class="pb-5">Before the launch, the finished website goes through an internal quality assurance in
+                    which it is put through its paces. Depending on the project, the website will be hosted via
+                    Webflow's ultra-fast hosting or integrated into another environment via code export.</p>
+            </div>
+        </div>
+        <div class="row text-center project-row-heading" id="reveiew">
+            <h3>Our Clients</h3>
+            <h2>What Our Clients Say
+                About Us.</h2>
+        </div>
+        <div class="row d-flex review-row">
+            <div class="col-md-3">
+                <div class="review-card text-center shadow-lg
+                bg-body rounded mt-5">
+                    <div class="review-star pb-3 pt-4">
+                        <img src="assets/img/starreview.png" class="img-fluid h-100">
+                    </div>
+                    <p class="pb-3">Mr Abdullah akram is a very knowledgeable person i have met in my coding career really enjoyed. </p>
+                    <h4 class="pb-4">Gunner</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="review-card text-center shadow-lg
+                bg-body rounded mt-5">
+                    <div class="review-star pb-3 pt-4">
+                        <img src="assets/img/starreview.png" class="img-fluid h-100">
+                    </div>
+                    <p class="pb-3">First time here really so good to work with him especially his coding skills are awesome.</p>
+                    <h4 class="pb-4">William</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="review-card text-center shadow-lg
+                bg-body rounded mt-5">
+                    <div class="review-star pb-3 pt-4">
+                        <img src="assets/img/starreview.png" class="img-fluid h-100">
+                    </div>
+                    <p class="pb-3">clean and commented code.and really not hard to understand the code.i appreciate his work.</p>
+                    <h4 class="pb-4">Benjamin</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="review-card text-center shadow-lg 
+                bg-body rounded mt-5">
+                    <div class="review-star pb-3 pt-4">
+                        <img src="assets/img/starreview.png" class="img-fluid h-100">
+                    </div>
+                    <p class="pb-3">He is an extremely Impressive peep.he is a great communicator and has extensive knowledge.</p>
+                    <h4 class="pb-4">Andrew</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center project-row-heading" id="faq">
+            <h3>Questions</h3>
+            <h2>Mostly Asked Questions</h2>
+        </div>
+        <div class="accordion row" id="accordionExample">
+            <div class="col-md-6 mt-5">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3>What services do you offer exactly?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>My focus is on Front-End Web development of websites based on screen designs.
+                                Additionally, I offer consulting services during your design phase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h3>How much does a project cost?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Most of my projects range between $500 and $1,000. My minimum engagement fee is $200.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h3>Which companies do you work with?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Basically i am a freelancer i also work for a company in past.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingfour">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <h3>Do you work internationally?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Yes. I'm based in Pakistan and have clients in the US, Canada, England, Australia, New
+                                Zealand, Italy, France and Switzerland.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingfive">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <h3>Payment terms for a project?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>70% upfront and 30% after launch. However, this payment schedule can be adjusted. For
+                                international transfers, most of my clients use Wise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingsix">
+                        <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                            <h3>How long does a project take?</h3>
+                        </div>
+                    </h2>
+                    <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Most of my projects take between 2 weeks and 1 month.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="text-center profile-section request-row">
+            <h1 class="pt-1 pb-5">Interested in <br> working with me?</h1>
+            <a href="mailto:m.abdullahakram01@gmail.com" class="text-decoration-none">Send me a project
+                request <i class="bi bi-arrow-bar-right"></i></a>
+        </section>
+        <hr class="hr">
+        <div class="d-flex align-items-center justify-content-between footer">
+            <p class="text-center pb-3 pt-3">&#169; Abdullah Akram. All Rights Reserved. </p>
+            <p><code>m.abdullahakram01@gmail.com</code></p>
+        </div>
+        <div class="circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
