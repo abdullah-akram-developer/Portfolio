@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abdullah Akram - The Front-end Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .main-container{
+    padding: 0px 50px;
+        .lhs-top{
+            background: linear-gradient(159deg, rgba(37, 37, 50, .98) 0%, rgba(35, 35, 45, .98) 100%);
+            padding: 30px 0px;
+                .user-img img{
+                    border-radius: 50%;
+                }
+                    h5{
+                        padding: 15px 0px;
+                    }
+        }
+
+
+        .lhs-middle{
+            background-color: #20202a;
+            padding: 15px 20px;
+            max-height: 400px;
+            overflow-y: scroll;
+                ul li{
+                    padding: 3px 0px;
+                } 
+                    .straight-bars{
+                        padding: 10px 0px;
+                        .straight-bar{
+                            margin-bottom: 10px;
+                        }
+                            .straight-bar ul{
+                                margin-bottom: 5px !important;
+                            }
+                    }
+                        .tickmarks{
+                            padding: 10px 0px;
+                        }
+                
+        }
+        .lhs-middle::-webkit-scrollbar {
+            display: none;
+          }
+        .lhs-middle {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+          }
+
+        .lhs-last{
+            .social-icons{
+                padding: 10px 0px;
+                background: linear-gradient(159deg, rgba(37, 37, 50, .98) 0%, rgba(35, 35, 45, .98) 100%);
+            }
+                .icons-list{
+                    padding: 0px 10px;
+                }
+        }
+}
+.main-banner{
+    background-image: radial-gradient(circle, rgba(45,45,58,0.6083683473389356) 0%, rgba(25,25,35,1) 100%), url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 3vh;
+}
+.primary-banner{
+    background-image: linear-gradient(90deg, rgba(45, 45, 58, .9) 15%, rgba(45, 45, 58, .7) 50%, rgba(43, 43, 53, .7) 100%), url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.intro-sec{
+    padding: 60px 60px;
+    h1{
+        padding-bottom: 10px;
+    }
+        .code{
+            font-family: "Courier Prime", serif;
+            font-size: 16px;
+            color: white;
+        }
+            .code i{
+                color: #ffc107;
+            }
+                .explore-btn{
+                    padding-top: 30px;
+                }
+                    .explore-btn a{
+                        background-color: #ffc107;
+                        padding: 10px 15px;
+                        color: black;
+                    }
+}
+.big-img{
+    background-image: url("/assets/images/Adobe\ Express\ -\ file-Photoroom.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+    filter: drop-shadow(16px 16px 20px #20202a) ;
+}
+.experience-row{
+    padding: 15px 0px 25px 0px;
+}
+.services-row{
+    padding: 25px 0px 25px 0px;
+    .service-sec{
+        padding: 30px 40px;
+        background-color: #2c2c36;
+            p{
+                padding: 10px 0px;
+            }
+                a{
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    font-weight: 600;
+                    color: #ffc107;
+                }
+    }
+}
+.testimonials-row{
+    padding-bottom: 20px;
+        .carousel-item{
+            padding: 70px 200px 100px 200px;
+            }
+            .testimonial-txt{
+                background-color: rgba(255,255,255,0.8);
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                padding: 20px;
+                    h5{
+                        padding: 10px 0px;
+                    }
+            }
+}
+.footer-row{
+    background-color:#2c2c36;
+    padding: 15px 0px;
+    margin-bottom: 25px;
+}
+.main-banners{
+    background-image: radial-gradient(circle, rgba(45,45,58,0.6083683473389356) 0%, rgba(25,25,35,1) 100%), url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.port-row{
+    padding: 20px 0px;
+}
+.work-img{
+    max-width: 100%;
+    overflow: hidden;
+}
+.work-img img{
+    width: 100%;
+    scale: 0.9;
+    transition: 0.7s;
+}
+.work-img img:hover{
+    scale: 1;
+}
+.f-row{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.touch-row{
+    margin: 20px 0px 40px 0px!important;
+}
+
+
+.contact-information{
+    padding: 25px 20px;
+    background-color: #2c2c36;
+}
+.form{
+    background-color: #2c2c36;
+    padding: 17px 40px 40px 40px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color : transparent;
+    outline: none;
+    box-shadow: none;
+}
+.form-control{
+    background: white;
+    border: 1px solid transparent !important;
+    color: white;
+}
+.form-check-label, .form-label{
+    color: white !important;
+}
+.send-btn{
+    background-color: #ffc107;
+    padding: 15px 20px;
+    width: fit-content;
+    margin-left: 10px;
+    margin-top: 30px;
+        p{
+            color: white !important;
+            opacity: 1;
+            font-size: 15px !important;
+        }
+}
+.dropdown{
+    top: 20px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.btn{
+    background-color:transparent;
+    padding: 5px 0px;
+    width: 100%;
+    font-size: 25px;
+    border: transparent;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: #2c2c36;
+    border-color: transparent;
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #2c2c36;
+    border-color: transparent;
+}
+.dropdown-menu{
+    background-color: #20202a;
+    text-align: center;
+    --bs-dropdown-min-width: 7rem !important;
+}
+.list-dr{
+    padding: 5px 0px !important;
+}
+.dropdown-item {
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: .25px;
+    color: #8c8c8e;
+    font-size: 13px;
+    width: 100%;
+    padding: 0px !important;
+    transition: 0.5s;
+}
+.dropdown-item:hover {
+    background-color: transparent;
+    color: white;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #8c8c8e;
+    text-decoration: none;
+    background-color: transparent;
+}
+.list-dr{
+    width: 100px;
+}
+.after-drop{
+    position: relative;
+    top: 190px;
+    transform: rotate(90deg);
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container main-container">
+        <div class="row only-row">
+            <div class="col-md-3 sticky-top stick">
+                <div class="lhs-top text-center">
+                    <a href="#" class="user-img">
+                        <img src="assets/images/man.png" height="90">
+                    </a>
+                    <h5>Abdullah Akram</h5>
+                    <p>Front-end Web Developer <br> App Developer</p>
+                </div>
+                <div class="lhs-middle">
+                    <ul>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <h6>Residence:</h6>
+                            <p>Pakistan</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <h6>City:</h6>
+                            <p>Chiniot</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <h6>Age:</h6>
+                            <p>22</p>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="circular-progress-bars d-flex justify-content-center align-items-center">
+                        <div class="circular-bar-container c1 text-center">
+                            <div class="circular html">
+                                <progress id="html" min="0" max="100" value="92"></progress>
+                            </div>
+                            <h6>English</h6>
+                        </div>
+                        <div class="circular-bar-container text-center">
+                            <div class="circular html">
+                                <progress id="html" min="0" max="100" value="92"></progress>
+                            </div>
+                            <h6>Urdu</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="straight-bars">
+                        <div class="straight-bar">
+                            <ul>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <h6>Html</h6>
+                                    <p>100%</p>
+                                </li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-value httml"></div>
+                            </div>
+                        </div>
+                        <div class="straight-bar">
+                            <ul>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <h6>CSS</h6>
+                                    <p>95%</p>
+                                </li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-value css"></div>
+                            </div>
+                        </div>
+                        <div class="straight-bar">
+                            <ul>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <h6>Js</h6>
+                                    <p>85%</p>
+                                </li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-value js"></div>
+                            </div>
+                        </div>
+                        <div class="straight-bar">
+                            <ul>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <h6>Kotlin</h6>
+                                    <p>70%</p>
+                                </li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-value kt"></div>
+                            </div>
+                        </div>
+                        <div class="straight-bar">
+                            <ul>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <h6>Java</h6>
+                                    <p>80%</p>
+                                </li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-value jv"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="tickmarks">
+                        <div class="tickmark">
+                            <ul>
+                                <li class="d-flex justify-content-start align-items-center"><i class="bi bi-check-lg"
+                                        style="padding-right: 10px; color: #ffc107;"></i>
+                                    <p>Bootstrap, Materialize.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tickmark">
+                            <ul>
+                                <li class="d-flex justify-content-start align-items-center"><i class="bi bi-check-lg"
+                                        style="padding-right: 10px; color: #ffc107;"></i>
+                                    <p>Stylus, Saass, Less</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tickmark">
+                            <ul>
+                                <li class="d-flex justify-content-start align-items-center"><i class="bi bi-check-lg"
+                                        style="padding-right: 10px; color: #ffc107;"></i>
+                                    <p>App Development</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="cv d-flex justify-content-start align-items-center" style="width: fit-content;">
+                        <p>Download CV</p><i class="bi bi-box-arrow-down"
+                            style="padding-left: 5px; color: #8c8c8e;"></i>
+                    </a>
+                </div>
+                <div class="lhs-last">
+                    <ul class="social-icons d-flex justify-content-center">
+                        <li class="icons-list"><a href="#"><i class="bi bi-linkedin" style="color: #8c8c8e;"></i></a>
+                        </li>
+                        <li class="icons-list"><a href="#"><i class="bi bi-dribbble" style="color: #8c8c8e;"></i></a>
+                        </li>
+                        <li class="icons-list"><a href="#"><i class="bi bi-github" style="color: #8c8c8e;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container-fluid d-block" id="home">
+                    <div class="main-banner"></div>
+                    <div class="row primary-banner">
+                        <div class="col-md-7">
+                            <section class="intro-sec">
+                                <h1>Your Vision, My Code.</h1>
+                                <span class="code"><i>&lt;code&gt;</i>I build Websites <i>&lt;&sol;code&gt;</i></span>
+                                <div class="explore-btn">
+                                    <a href="#" id="explore-btn">Explore Now</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-5 big-img">
+
+                        </div>
+                    </div>
+                    <div class="row experience-row">
+                        <div class="col-md-4 d-flex justify-content-start">
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <h2>5+ </h2>
+                                    <h6> Years Experience</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <h2>4+ </h2>
+                                    <h6>Completed Projects</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4  d-flex justify-content-end">
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <h2>1</h2>
+                                    <h6>Happy Customers</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>My Services</h4>
+                    <div class="row services-row">
+                        <div class="col-md-4">
+                            <div class="service-sec">
+                                <h5>Web Development</h5>
+                                <p>I create high-performing, user-friendly websites that are fully responsive and
+                                    tailored to your needs, using modern web technologies for a seamless experience.</p>
+                                <a href="#" class="order-now-btn">ORDER NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-sec">
+                                <h5>App Development</h5>
+                                <p>I specialize in creating high-quality, responsive Android apps that are fast and
+                                    secure. delivering exceptional performance on all Android devices.</p>
+                                <a href="#" class="order-now-btn">ORDER NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-sec">
+                                <h5>UI/UX Design</h5>
+                                <p>I design clean, intuitive user interfaces that provide seamless and engaging
+                                    experiences, focusing on your users’ needs to drive satisfaction and conversion.</p>
+                                <a href="#" class="order-now-btn">ORDER NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Recomendations</h4>
+                    <div class="row testimonials-row">
+                        <div class="col-md-12">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="testimonial d-flex justify-content-center align-items-center">
+                                            <div class="testimonial-txt">
+                                                <h5>Paul Trueman</h5>
+                                                <p>An exceptional web developer who transforms ideas into dynamic,
+                                                    user-friendly websites with precision and creativity</p>
+                                            </div>
+                                            <div class="testimonial-img">
+                                                <img src="assets/images/234031693-6bbaba7d-632c-4d7d-965f-75a76a549ce2.jpg"
+                                                    height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial d-flex justify-content-center align-items-center">
+                                            <div class="testimonial-txt">
+                                                <h5>Paul Trueman</h5>
+                                                <p>An exceptional web developer who transforms ideas into dynamic,
+                                                    user-friendly websites with precision and creativity</p>
+                                            </div>
+                                            <div class="testimonial-img">
+                                                <img src="assets/images/michael.jpg" height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial d-flex justify-content-center align-items-center">
+                                            <div class="testimonial-txt">
+                                                <h5>Paul Trueman</h5>
+                                                <p>An exceptional web developer who transforms ideas into dynamic,
+                                                    user-friendly websites with precision and creativity</p>
+                                            </div>
+                                            <div class="testimonial-img">
+                                                <img src="assets/images/olga.jpg" height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-row home-last">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Abdullah Akram. All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+
+                <div class="container-fluid main-banners d-none" id="portfolio">
+                    <div class="row port-row">
+                        <div class="col-md-12">
+                            <h4>Portfolio</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="work-img text-center">
+                                <img src="assets/images/Untitled21 (1).jpg" alt="my work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row footer-row f-row work-last">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Abdullah Akram. All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid main-banners d-none" id="contact">
+                    <div class="row port-row">
+                        <div class="col-md-12">
+                            <h4>Contact Information</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-information">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Residence:</h6>
+                                        <p>Pakistan</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>City:</h6>
+                                        <p>Chiniot</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Age:</h6>
+                                        <p>22</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-information">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Email:</h6>
+                                        <p><a href="mailto:" style="color: #ffffff;">Send Email</a></p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Github:</h6>
+                                        <p>abdullah-akram-developer</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Dribble:</h6>
+                                        <p>none</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-information">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Support service:</h6>
+                                        <p>+92 000 000 000</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Personal:</h6>
+                                        <p>+92 000 000 000</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <h6>Office:</h6>
+                                        <p>+92 000 000 000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row touch-row">
+                        <div class="col-md-12">
+                            <h4>Get in Touch</h4>
+                        </div>
+                    </div>
+                    <form class="row g-3 form">
+                        <div class="col-md-12">
+                          <label for="inputEmail4" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text">Message</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                              </div>
+                        </div>
+                        <a href="mailto:m.abdullahakram01@gmail.com" class="send-btn">
+                            <p>Send Message</p>
+                        </a>
+                      </form>
+                    <div class="row footer-row f-row cont-last">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Abdullah Akram. All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-1 sticky-top" style="height: fit-content;">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="list-dr"><a class="dropdown-item" id="ho" href="#home">Home</a></li>
+                        <li class="list-dr"><a class="dropdown-item" id="port" href="#portfolio">Portfolio</a></li>
+                        <li class="list-dr"><a class="dropdown-item" id="con" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <p class="after-drop" id="after-drops">HOME</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/clear.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
