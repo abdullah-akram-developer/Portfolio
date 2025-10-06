@@ -52,13 +52,6 @@ This portfolio showcases my **skills**, **projects**, and **services** — all c
 
 ---
 
-## 💬 Contact
-
-📧 **Email:** [Email Me](mailto:m.abdullahakram01@gmail.com)  
-🌍 **Website:** [Portfolio Website](https://abdullah-akram-developer.github.io/Portfolio/)
-
----
-
 ## 👨‍💻 Developer
 
 **Abdullah Akram**  
@@ -69,11 +62,12 @@ This portfolio showcases my **skills**, **projects**, and **services** — all c
 
 ---
 
-⭐ **If you like this app, please give it a star on GitHub!**
-
----
-
 ## 📄 License
 
 This project is for **personal or educational use only**.  
 © 2024 The Amazing Minds. All Rights Reserved.
+
+---
+
+⭐ **If you like this app, please give it a star on GitHub!**
+
