@@ -59,6 +59,20 @@ This portfolio showcases my **skills**, **projects**, and **services** — all c
 
 ---
 
+## 👨‍💻 Developer
+
+**Abdullah Akram**  
+📍 Pakistan  
+💻 Android & Web Developer  
+📧 [Email](mailto:m.abdullahakram01@gmail.com)  
+🔗 [GitHub](#) 
+
+---
+
+⭐ **If you like this app, please give it a star on GitHub!**
+
+---
+
 ## 📄 License
 
 This project is for **personal or educational use only**.  
