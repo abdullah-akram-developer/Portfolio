@@ -110,7 +110,12 @@ body {
 }
 @keyframes html-progress {
   to {
-    --progress-value: 92;
+    --progress-value: 100;
+  }
+}
+@keyframes eng-progress {
+  to {
+    --progress-value: 90;
   }
 }
 .circular {
@@ -126,6 +131,22 @@ body {
 .circular::before {
   counter-reset: percentage var(--progress-value);
   content: counter(percentage) "%";
+}
+
+.eng {
+  background: radial-gradient(closest-side, #20202a 85%, transparent 88% 100%), conic-gradient(#ffc107 calc(var(--progress-value) * 1%), #191923 0);
+  animation: eng-progress 2s 1 forwards;
+  margin-bottom: 10px;
+}
+
+.eng::before {
+  animation: eng-progress 2s 1 forwards;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  color: #8c8c8e;
+  font-size: 13px;
 }
 
 .html {
@@ -248,7 +269,12 @@ progress {
   }
 }
 @media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1520px;
   }
 }

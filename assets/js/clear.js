@@ -84,7 +84,7 @@ function displaySection(sectionId) {
 // Event listener for the "Explore Now" button
 document.getElementById('explore-btn').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent default anchor behavior
-  displaySection('contact'); // Show Contact section
+  displaySection('portfolio'); // Show Contact section
 });
 
 // Event listeners for all "Order Now" buttons
